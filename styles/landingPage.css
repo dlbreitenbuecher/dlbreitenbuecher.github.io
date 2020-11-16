@@ -18,7 +18,7 @@ html {
     --main-font-color: #333333;
     --main-bg-color: white;
     --margin-bg-color: #F8F8F8;
-    --page-border-color: #2D9CDB;
+    --main-border-color: #2D9CDB;
     --shape-border-color: #333333;
     /* Circle colors */
     --blog-bg-color: #EB5757;
@@ -116,14 +116,14 @@ header {
 .largerTopBorder {
     width: 100%;
     height: 10px;
-    background-color: var(--page-border-color);
+    background-color: var(--main-border-color);
     margin-bottom: 4px;
 }
 
 .smallerTopBorder {
     width: 100%;
     height: 3px;
-    background-color: var(--page-border-color);
+    background-color: var(--main-border-color);
     grid-area: header;
     margin-bottom: 65px;
 }
@@ -165,7 +165,7 @@ footer p {
 .bottomBorder {
     width: 100%;
     height: 10px;
-    background-color: var(--page-border-color);
+    background-color: var(--main-border-color);
     grid-area: footer;
     align-self: end;
 }
