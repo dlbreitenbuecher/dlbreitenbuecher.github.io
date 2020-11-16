@@ -160,7 +160,7 @@ footer img {
 
 footer p {
     color: #828282;
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 300;
 }
 
@@ -329,13 +329,13 @@ a.activeContact{
 /* Project Page Specific Stylines */
 
 
-.grid-container-projects {
+.main-grid-container-projects {
     grid-area: content;
     justify-self: start;
     align-self: flex-start;
     margin-left: 4rem;
     margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 7.5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -389,19 +389,23 @@ a.activeContact{
     margin-bottom: 12px;
 }
 
+.projects-text {
+    margin-bottom: 26px;
+}
+
 .projects-text p {
     color: var(--lighter-font-color);
     line-height: 130.3%;
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 .projects-links {
     border: 1px solid var(--main-border-color);
-    font-size: 14px;
+    font-size: .875rem;
     padding: 8px 16px;
     width: max-content;
     display: inline-block;
-    margin-top: 26px;
+    /* margin-top: 26px; */
     margin-right: 12px;
 }
 
@@ -412,4 +416,44 @@ a.activeContact{
 
 .projects-links a {
     margin-right: .5rem;
+}
+
+
+
+/* Contact Page Specific Stylings */
+
+.main-flex-container-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    margin-bottom: 7.5rem;
+    /* border: 1px solid black; */
+    width: 40%;
+    justify-self: center;
+    font-family: var(--content-font);
+    font-size: .875rem;
+}
+
+.main-flex-container-contact img {
+    max-width: 100%;
+    height: auto
+}
+
+.contact-wave {
+    font-size: 1.5rem;
+}
+
+.contact-greeting {
+    margin: 1.625rem 0 1rem 0;
+    /* line-height: 19.07px; */
+}
+
+.contact-content {
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+.contact-email {
+    color: #2F80ED;
+    margin-bottom: 1.5rem;
 }
