@@ -72,7 +72,7 @@ header {
 .name{
     grid-area: name;
     justify-self: left;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .name h1 {

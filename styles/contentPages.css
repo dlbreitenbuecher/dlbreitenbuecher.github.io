@@ -50,7 +50,7 @@ body {
     min-height: 100vh;
     margin: 0 auto 0 auto;
     display: grid;
-    grid-template-rows: 161px auto minmax(0, 1fr) auto;
+    grid-template-rows: 161px 50px minmax(0, 1fr) auto;
     align-items: center;
     justify-items: center;
     align-content: space-between;
@@ -76,11 +76,11 @@ header {
 .name{
     grid-area: name;
     justify-self: left;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .name h1 {
-    font-size: 3rem;
+    font-size: 1.75rem;
     font-weight: normal;
     font-family: var(--name-font, sans-serif);
     margin-left: 48px;
@@ -178,7 +178,7 @@ footer p {
 
 nav {
     grid-area: nav;
-    margin-top: 48px;
+    /* margin-top: 48px; */
     font-family: var(--main-title-font);
     text-transform: uppercase;
     font-weight: normal;
@@ -335,7 +335,7 @@ a.activeContact{
     align-self: flex-start;
     margin-left: 4rem;
     margin-top: 4.5rem;
-    margin-bottom: 3.75rem;
+    margin-bottom: 4.5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
