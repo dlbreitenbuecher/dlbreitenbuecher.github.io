@@ -325,6 +325,10 @@ a.activeContact{
     margin-right: 14px; 
 }
 
+.resumeDownloadButton:hover {
+    background-color: #66b9e925
+}
+
 
 /* Project Page Specific Stylines */
 
