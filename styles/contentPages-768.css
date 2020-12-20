@@ -65,10 +65,10 @@ body {
 header {
     grid-area: header;
     width: 100%;
-    align-self: end;
+    align-self: center;
     display: grid;
     grid-template-columns: 1fr 75px;
-    grid-template-rows: 144px;
+    grid-template-rows: 100px;
     grid-template-areas: "name links";
 }
 
@@ -80,20 +80,24 @@ header {
 }
 
 .name h1 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: normal;
     font-family: var(--name-font, sans-serif);
     margin-left: 1rem;
+}
+
+.name a {
+    margin: 0;
 }
 
 .subtitle {
     grid-area: name;
     align-self: center;
     justify-self: start;
-    margin-top: 1rem;
+    margin-top: 50px;
     margin-left: 1rem;
     font-family: var(--main-title-font, sans-serif);
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 300;
     /* justify-self: right; */
 }
