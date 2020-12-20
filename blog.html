@@ -8,15 +8,21 @@
     <meta name="keywords" content="Portfolio, Projects, About Me, David Breitenbuecher, Web Developer">
     <meta name="author" content="David Breitenbuecher">
 
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon_io/site.webmanifest">
 
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" type="text/css" href="styles/contentPages.css">
+    <!-- Style Sheets -->
+    <!-- General Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="styles/contentPages.css" media="screen and (min-width: 769px">
+    <!-- Devices with a width of 768px or less -->
+    <link rel="stylesheet" type="text/css" href="/styles/contentPages-768.css" media="screen and (max-width: 768px">
 </head>
 
 <body>
@@ -27,15 +33,17 @@
         </section>
         <header>
             <section class="name">
-                <h1>dAVid</h1>
-                <h1>breitenbuecher</h1>
+                <a href="index.html">
+                    <h1>dAVid</h1>
+                    <h1>breitenbuecher</h1>
+                </a>
             </section>
             <section class='subtitle'>
                 <p>geometer turned developer</p>
-                <section class='subtitleLinks'>
-                    <a href="https://www.linkedin.com/in/david-breitenbuecher/" title="Visit my LinkedIn Profile" target="_blank" rel="noopener noreferrer"><img src="assets/LinkedInIcon.png" alt="LinkedIn profile link"></a>
-                    <a href="https://github.com/dlbreitenbuecher" title="Visit my GitHub Profile" target="_blank" rel="noopener noreferrer"><img src="assets/GitHubIcon.png" alt="GitHub profile link"></a>
-                </section>
+            </section>
+            <section class='subtitleLinks'>
+                <a href="https://www.linkedin.com/in/david-breitenbuecher/" title="Visit my LinkedIn Profile" target="_blank" rel="noopener noreferrer"><img src="/assets/LinkedInIcon.png" alt="LinkedIn profile link"></a>
+                <a href="https://github.com/dlbreitenbuecher" title="Visit my GitHub Profile" target="_blank" rel="noopener noreferrer"><img src="/assets/GitHubIcon.png" alt="GitHub profile link"></a>
             </section>
         </header>
         <nav role='navigation' aria-label="main menu" class="activeBlogBorder">
