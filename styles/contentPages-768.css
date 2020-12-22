@@ -203,14 +203,14 @@ footer{
 
 footer img {
     /* margin: 0 auto 0 auto; */
-    width: 56px;
+    width: 42px;
     height: auto;
     margin-bottom: 1rem;
 }
 
 footer p {
     color: #828282;
-    font-size: .875rem;
+    font-size: .75rem;
     font-weight: 300;
 }
 
@@ -380,7 +380,7 @@ a:last-child {
 }
 
 .workInProgress img {
-    width: 144px;
+    width: 75px;
     height: auto;
 }
 
@@ -388,8 +388,8 @@ a:last-child {
 .workInProgress p{
     color: var(--main-border-color);
     font-family: var(--main-title-font, sans-serif);
-    font-weight: 600;
-    font-size: 1rem;
+    /* font-weight: 600; */
+    font-size: .75rem;
     text-transform: uppercase;
 }
 
