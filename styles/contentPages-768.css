@@ -60,9 +60,49 @@ body {
                         "footer";
 }
 
-/* Header Stylings */
+/* Landing Page Header Stylings (header - subtitle) */
 
 header {
+    grid-area: header;
+    width: 100%;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 1fr 75px;
+    grid-template-rows: 144px;
+    grid-template-areas: "name links";
+}
+
+.name{
+    grid-area: name;
+    justify-self: left;
+    align-self: start;
+    margin-top: 1rem;
+}
+
+.name h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: var(--name-font, sans-serif);
+    margin-left: 1rem;
+}
+
+.subtitle {
+    grid-area: name;
+    align-self: center;
+    justify-self: start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: var(--main-title-font, sans-serif);
+    font-size: 1rem;
+    font-weight: 300;
+    /* justify-self: right; */
+}
+
+/* Header Stylings */
+
+/* Todo: decide whether to use header stylings above (larger text) or below */
+
+/* header {
     grid-area: header;
     width: 100%;
     align-self: center;
@@ -99,8 +139,7 @@ header {
     font-family: var(--main-title-font, sans-serif);
     font-size: .875rem;
     font-weight: 300;
-    /* justify-self: right; */
-}
+} */
 
 .subtitleLinks {
     grid-area: links;
@@ -196,7 +235,7 @@ nav {
     font-size: 1rem;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 4px solid var(--active-border-color);
 
@@ -205,16 +244,15 @@ nav {
 
 
 .homeMenuLink img {
-    width: 25px;
-    height: 25px;
-    margin-left: 3rem;
+    /* 25px = 1.5625rem */
+    width: 1.5625rem;
+    height: 1.5625rem;
 }
 
 a {
     text-decoration: none;
-    margin-right: 3rem;
+    font-size: .75rem;
 }
-
 
 a.blogMenuLink:hover {
     color: var(--link-hover-color);
@@ -234,10 +272,10 @@ a.contactMenuLink:hover {
 
 a.activeBlog{
     background-color: var(--blog-bg-color);
-    /* height: 44px; */
-    height: 2.75rem;
-    /* width: 121px; */
-    width: 7.5625rem;
+    /* height: 34px; */
+    height: 2.125rem;
+    /* width: 70px; */
+    width: 4.375rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,6 +329,46 @@ a.activeContact{
 .activeContactBorder {
     --active-border-color: var(--contact-bg-color);
 }
+
+
+a:first-child{
+    margin-left: 1rem;
+}
+
+a:last-child {
+    margin-right: 1rem;
+}
+
+
+/* Nav Responsive Stylings */
+
+/* #nav-bar a.hamburger {
+    display: block;
+    margin-left: auto;
+}
+
+
+.activeBlogBorder a:not(:first-child) {
+    display: none;
+}
+
+.activeBlogBorder.responsive {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.activeBlogBorder.responsive a:not(:first-child) {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: .5rem 1rem;
+}
+
+.activeBlogBorder.responsive a.hamburger {
+    width: min-content;
+} */
 
 
 
