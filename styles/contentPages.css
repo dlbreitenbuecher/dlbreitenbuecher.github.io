@@ -204,6 +204,9 @@ a {
     margin-right: 3rem;
 }
 
+a.hamburger {
+    display: none;
+}
 
 a.blogMenuLink:hover {
     color: var(--link-hover-color);

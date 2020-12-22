@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets view on all screens at 1:1 aspect ratio. iPhones and other devices will not render at full view and require user zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='HandheldFriendly' content="true">
+
+
     <title>David's Portfolio</title>
     <meta name="David Breitenbuecher's Portfolio" content="David Breitenbuecher is a web developer. Learn more about him, see some sample projects, and contact him">
     <meta name="keywords" content="Portfolio, Projects, About Me, David Breitenbuecher, Web Developer">
@@ -17,6 +22,10 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+
+    <!-- Icons -->
+    <!-- Hamburger Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Style Sheets -->
     <!-- General Style Sheet -->
@@ -46,13 +55,20 @@
                 <a href="https://github.com/dlbreitenbuecher" title="Visit my GitHub Profile" target="_blank" rel="noopener noreferrer"><img src="/assets/GitHubIcon.png" alt="GitHub profile link"></a>
             </section>
         </header>
-        <nav role='navigation' aria-label="main menu" class="activeBlogBorder">
+
+        <!-- NavBar -->
+        <nav role='navigation' aria-label="main menu" class="activeBlogBorder" id="nav-bar">
             <a class="homeMenuLink" href="index.html"><img src="assets/homeMenuIcon.png" alt="Home Link"></a>
+            <!-- <a href="javascript:void(0);" class="hamburger" onclick="toggleHamburger()">
+                <i class="fa fa-bars"></i>
+            </a> -->
             <a class="activeBlog" href="blog.html">Blog</a>
             <a class="projectMenuLink" href="projects.html">Projects</a>
             <a class="resumeMenuLink" href="resume.html">Resume</a>
             <a class="contactMenuLink" href="contact.html">Contact</a>
         </nav>
+
+        <!-- Main Content -->
         <main>
             <section class="workInProgress">
                 <img src="assets/bridgeLeft.png" alt="Under Construction">
@@ -69,5 +85,16 @@
         </footer>
         <div class="bottomBorder"></div>
     </div>
+
+    <!-- <script>
+        function toggleHamburger() {
+            const nav = document.getElementById('nav-bar');
+            if (nav.className === 'activeBlogBorder') {
+                nav.className += ' responsive';
+            } else {
+                nav.className = 'activeBlogBorder';
+            }
+        }
+    </script> -->
 </body>
 </html>
