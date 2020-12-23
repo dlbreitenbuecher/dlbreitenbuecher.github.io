@@ -49,7 +49,8 @@ body {
     min-height: 100vh;
     margin: 0 auto 0 auto;
     display: grid;
-    grid-template-rows: 161px 50px minmax(0, 1fr) auto;
+    /* grid-template-rows: 161px 50px minmax(0, 1fr) auto; */
+    grid-template-rows: auto auto minmax(200px, 1fr) auto;
     align-items: center;
     justify-items: center;
     align-content: space-between;
@@ -60,37 +61,38 @@ body {
                         "footer";
 }
 
-/* Landing Page Header Stylings (header - subtitle) */
+/* Header Stylings */
 
 header {
     grid-area: header;
     width: 100%;
-    align-self: end;
     display: grid;
-    grid-template-columns: 1fr 75px;
-    grid-template-rows: 144px;
+    grid-template-columns: auto 75px;
+    /* grid-template-rows: 144px; */
+    grid-template-rows: 9rem;
     grid-template-areas: "name links";
+
 }
 
 .name{
     grid-area: name;
     justify-self: left;
     align-self: start;
-    margin-top: 1rem;
+    margin-top: 24px;
+    margin-left: 16px;
 }
 
 .name h1 {
     font-size: 1.5rem;
     font-weight: normal;
     font-family: var(--name-font, sans-serif);
-    margin-left: 1rem;
 }
 
 .subtitle {
     grid-area: name;
     align-self: center;
     justify-self: start;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     font-family: var(--main-title-font, sans-serif);
     font-size: 1rem;
@@ -98,57 +100,19 @@ header {
     /* justify-self: right; */
 }
 
-/* Header Stylings */
-
-/* Todo: decide whether to use header stylings above (larger text) or below */
-
-/* header {
-    grid-area: header;
-    width: 100%;
-    align-self: center;
-    display: grid;
-    grid-template-columns: 1fr 75px;
-    grid-template-rows: 100px;
-    grid-template-areas: "name links";
-}
-
-.name{
-    grid-area: name;
-    justify-self: left;
-    align-self: start;
-    margin-top: 1rem;
-}
-
-.name h1 {
-    font-size: 1.125rem;
-    font-weight: normal;
-    font-family: var(--name-font, sans-serif);
-    margin-left: 1rem;
-}
-
-.name a {
-    margin: 0;
-}
-
-.subtitle {
-    grid-area: name;
-    align-self: center;
-    justify-self: start;
-    margin-top: 50px;
-    margin-left: 1rem;
-    font-family: var(--main-title-font, sans-serif);
-    font-size: .875rem;
-    font-weight: 300;
-} */
-
 .subtitleLinks {
     grid-area: links;
-    justify-self: center;
+    justify-self: end;
     align-self: start;
-    margin-top: 1rem;
+    margin-top: 24px;
+    margin-right: 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.subtitleLinks a {
+    margin: 0;
 }
 
 .subtitleLinks img {
@@ -165,6 +129,7 @@ header {
     height: 17px;
     grid-area: header;
     align-self: start;
+    margin-bottom: 65px;
 }
 
 .largerTopBorder {
@@ -178,8 +143,8 @@ header {
     width: 100%;
     height: 3px;
     background-color: var(--main-border-color);
-    grid-area: header;
-    margin-bottom: 65px;
+    /* grid-area: header; */
+    /* margin-bottom: 65px; */
 }
 
 
@@ -331,12 +296,12 @@ a.activeContact{
 }
 
 
-a:first-child{
-    margin-left: 1rem;
+nav a:first-child{
+    margin-left: 16px;
 }
 
-a:last-child {
-    margin-right: 1rem;
+nav a:last-child {
+    margin-right: 16px;
 }
 
 
