@@ -104,6 +104,10 @@ header {
     margin-right: 48px;
 }
 
+.subtitleLinks a {
+    margin: 0;
+}
+
 .subtitleLinks img {
     height: 25px;
     width: 25px;
