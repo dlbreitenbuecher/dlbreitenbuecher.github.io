@@ -239,8 +239,8 @@ a.activeBlog{
     background-color: var(--blog-bg-color);
     /* height: 34px; */
     height: 2.125rem;
-    /* width: 70px; */
-    width: 4.375rem;
+    /* width: 64px; */
+    width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,10 +282,10 @@ a.activeResume{
 
 a.activeContact{
     background-color: var(--contact-bg-color);
-    /* height: 44px; */
-    height: 2.75rem;
-    /* width: 121px; */
-    width: 7.5625rem;
+    /* height: 34px; */
+    height: 2.125rem;
+    /* width: 76px; */
+    width: 4.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,37 +303,6 @@ nav a:first-child{
 nav a:last-child {
     margin-right: 16px;
 }
-
-
-/* Nav Responsive Stylings */
-
-/* #nav-bar a.hamburger {
-    display: block;
-    margin-left: auto;
-}
-
-
-.activeBlogBorder a:not(:first-child) {
-    display: none;
-}
-
-.activeBlogBorder.responsive {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.activeBlogBorder.responsive a:not(:first-child) {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: .5rem 1rem;
-}
-
-.activeBlogBorder.responsive a.hamburger {
-    width: min-content;
-} */
 
 
 
@@ -457,7 +426,7 @@ nav a:last-child {
 .projects-links {
     border: 1px solid var(--main-border-color);
     font-size: .875rem;
-    padding: 8px 16px;
+    padding: 8px 12px;
     width: max-content;
     display: inline-block;
     /* margin-top: 26px; */
@@ -480,10 +449,10 @@ nav a:last-child {
 .main-flex-container-contact {
     display: flex;
     flex-direction: column;
-    margin-top: 4.5rem;
-    margin-bottom: 7.5rem;
+    margin-top: 40px;
+    margin-bottom: 80px;
     /* border: 1px solid black; */
-    width: 40%;
+    width: 60%;
     justify-self: center;
     font-family: var(--content-font);
     font-size: .875rem;
@@ -504,11 +473,18 @@ nav a:last-child {
 }
 
 .contact-content {
-    width: 90%;
+    width: 100%;
     margin-bottom: 1.5rem;
 }
 
 .contact-email {
     color: #2F80ED;
     margin-bottom: 1.5rem;
+    font-size: .875rem;
+}
+
+.contact-links {
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
