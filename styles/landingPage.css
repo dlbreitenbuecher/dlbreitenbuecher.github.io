@@ -86,8 +86,8 @@ header {
     grid-area: subtitle;
     justify-self: right;
     align-self: start;
-    margin-top: 2.5rem;
-    margin-right: 46px;
+    margin-top: 48px;
+    margin-right: 48px;
     font-family: var(--main-title-font, sans-serif);
     font-size: 1.125rem;
     font-weight: 300;
@@ -101,16 +101,20 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 1rem;
-    margin-right: 46px;
+    margin-right: 48px;
 }
 
 .subtitleLinks img {
     height: 25px;
     width: 25px;
-    /* margins in rem because subtitle font is in rem */
-    margin-top: .875rem;
-    margin-left: 14px;
+    margin-top: 16px;
+    margin-left: 16px;
 }
+
+.subtitleLinks a {
+    margin: 0;
+}
+
 
 .topBorder {
     width: 100%;
