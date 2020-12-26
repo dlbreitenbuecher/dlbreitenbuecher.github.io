@@ -50,11 +50,12 @@ body {
     min-height: 100vh;
     margin: 0 auto 0 auto;
     display: grid;
-    grid-template-rows: 161px 50px minmax(0, 1fr) auto;
+    grid-template-rows: auto auto 50px minmax(250px, 1fr) auto;
     align-items: center;
     justify-items: center;
     align-content: space-between;
     grid-template-areas: 
+                        "top-border"
                         "header"
                         "nav"
                         "content"
@@ -69,7 +70,7 @@ header {
     align-self: end;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 144px;
+    grid-template-rows: 7rem;
     grid-template-areas: "name subtitle";
 }
 
@@ -77,20 +78,23 @@ header {
     grid-area: name;
     justify-self: left;
     align-self: center;
+    /* margin-top: 32px; */
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
 }
 
 .name h1 {
     font-size: 1.75rem;
     font-weight: normal;
     font-family: var(--name-font, sans-serif);
-    margin-left: 48px;
 }
 
 .subtitle {
     grid-area: subtitle;
     justify-self: right;
     align-self: start;
-    margin-top: 48px;
+    margin-top: 32px;
     margin-right: 48px;
     font-family: var(--main-title-font, sans-serif);
     font-size: 1.125rem;
@@ -104,7 +108,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     margin-right: 48px;
 }
 
@@ -123,7 +127,7 @@ header {
 .topBorder {
     width: 100%;
     height: 17px;
-    grid-area: header;
+    grid-area: top-border;
     align-self: start;
 }
 
