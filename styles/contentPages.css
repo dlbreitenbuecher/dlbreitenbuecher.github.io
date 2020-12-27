@@ -325,12 +325,11 @@ a.activeContact{
 /* Resume Page Specific Stylings */
 
 .resumeDownloadButton {
+    border: 1px solid var(--main-border-color);
+    font-size: .875rem;
+    padding: 8px 12px;
     height: 4rem;
-    width: 19.9375rem;
-    border: 2px solid #2F80ED;
-    border-radius: 8px;
-    color: #2F80ED;
-    font-family: Roboto, sans-serif;
+    width: 16rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,7 +342,8 @@ a.activeContact{
 }
 
 .resumeDownloadButton:hover {
-    background-color: #66b9e925
+    background-color: #2d9bdb33;
+    cursor: pointer;
 }
 
 
