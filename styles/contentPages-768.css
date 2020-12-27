@@ -273,10 +273,10 @@ a.activeBlog{
 
 a.activeProject{
     background-color: var(--portfolio-bg-color);
-    /* height: 44px; */
-    height: 2.75rem;
-    /* width: 121px; */
-    width: 7.5625rem;
+    /* height: 34px; */
+    height: 2.125rem;
+    /* width: 64px; */
+    width: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -378,7 +378,7 @@ nav a:last-child {
 
 .main-grid-container-projects {
     grid-area: content;
-    justify-self: start;
+    justify-self: center;
     align-self: start;
     margin-left: 16px;
     margin-right: 16px;
@@ -387,7 +387,8 @@ nav a:last-child {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 48px;
+    gap: 54px;
+    max-width: 450px;
 }
 
 .projects-card {
@@ -398,8 +399,8 @@ nav a:last-child {
 }
 
 .projects-card-image-link-container {
-    max-width: 350px;
-    max-height: 240px;
+    /* max-width: 350px; */
+    /* max-height: 240px; */
     display: flex;
     justify-content: center;
     margin-right: 0;
