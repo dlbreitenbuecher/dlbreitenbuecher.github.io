@@ -129,6 +129,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 16px;
 }
 
 .subtitleLinks a {
@@ -138,7 +139,7 @@ header {
 .subtitleLinks img {
     height: 25px;
     width: 25px;
-    margin-top: 16px;
+    margin-bottom: 8px;
     /* margin-bottom: .5rem; */
     /* margins in rem because subtitle font is in rem */
     /* margin-top: .875rem;
