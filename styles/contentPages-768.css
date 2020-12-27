@@ -273,10 +273,10 @@ a.activeBlog{
 
 a.activeProject{
     background-color: var(--portfolio-bg-color);
-    /* height: 44px; */
-    height: 2.75rem;
-    /* width: 121px; */
-    width: 7.5625rem;
+    /* height: 34px; */
+    height: 2.125rem;
+    /* width: 64px; */
+    width: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,9 +289,9 @@ a.activeProject{
 a.activeResume{
     background-color: var(--resume-bg-color);
     /* height: 44px; */
-    height: 2.75rem;
+    height: 2.125rem;
     /* width: 121px; */
-    width: 7.5625rem;
+    width: 4.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,12 +352,11 @@ nav a:last-child {
 /* Resume Page Specific Stylings */
 
 .resumeDownloadButton {
-    height: 4rem;
-    width: 19.9375rem;
-    border: 2px solid #2F80ED;
-    border-radius: 8px;
-    color: #2F80ED;
-    font-family: Roboto, sans-serif;
+    border: 1px solid var(--main-border-color);
+    font-size: .875rem;
+    padding: 8px 12px;
+    height: 3rem;
+    width: 12.9375rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -370,36 +369,38 @@ nav a:last-child {
 }
 
 .resumeDownloadButton:hover {
-    background-color: #66b9e925
+    background-color: #2d9bdb33;
+    cursor: pointer;
 }
 
 
 /* Project Page Specific Stylines */
 
-
 .main-grid-container-projects {
     grid-area: content;
-    justify-self: start;
-    align-self: flex-start;
-    margin-left: 4rem;
-    margin-top: 4.5rem;
-    margin-bottom: 7.5rem;
+    justify-self: center;
+    align-self: start;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 2.5rem;
-    width: 61.5%;
+    gap: 54px;
+    max-width: 450px;
 }
 
 .projects-card {
     display: flex;
-    border-radius: 4px;
+    flex-direction: column;
+    /* border-radius: 4px; */
     padding: .5rem;
 }
 
 .projects-card-image-link-container {
-    width: 350px;
-    height: 240px;
+    /* max-width: 350px; */
+    /* max-height: 240px; */
     display: flex;
     justify-content: center;
     margin-right: 0;
@@ -409,24 +410,26 @@ nav a:last-child {
     /* width: 350px;
     height: auto; */
     /* overflow: hidden; */
-    object-fit: cover;
-    min-width: 100%;
+
+    object-fit: contain;
+    width: 100%;
     height: auto;
 }
 
 .projects-card-text-container {
-    margin-left: 24px;
+    margin-left: 0;
 }
 
 
 .projects-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;  
     padding-bottom: .2rem; 
     border-bottom: 2px solid var(--main-border-color);
     height: min-content;
     width: min-content;
-    margin-bottom: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .projects-text-description {
@@ -435,7 +438,7 @@ nav a:last-child {
 }
 
 .projects-text {
-    margin-bottom: 26px;
+    margin-bottom: 16px;
 }
 
 .projects-text p {
@@ -450,7 +453,6 @@ nav a:last-child {
     padding: 8px 12px;
     width: max-content;
     display: inline-block;
-    /* margin-top: 26px; */
     margin-right: 12px;
 }
 
