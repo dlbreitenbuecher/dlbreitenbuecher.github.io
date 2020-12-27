@@ -289,9 +289,9 @@ a.activeProject{
 a.activeResume{
     background-color: var(--resume-bg-color);
     /* height: 44px; */
-    height: 2.75rem;
+    height: 2.125rem;
     /* width: 121px; */
-    width: 7.5625rem;
+    width: 4.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,12 +352,11 @@ nav a:last-child {
 /* Resume Page Specific Stylings */
 
 .resumeDownloadButton {
-    height: 4rem;
-    width: 19.9375rem;
-    border: 2px solid #2F80ED;
-    border-radius: 8px;
-    color: #2F80ED;
-    font-family: Roboto, sans-serif;
+    border: 1px solid var(--main-border-color);
+    font-size: .875rem;
+    padding: 8px 12px;
+    height: 3rem;
+    width: 12.9375rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -370,7 +369,8 @@ nav a:last-child {
 }
 
 .resumeDownloadButton:hover {
-    background-color: #66b9e925
+    background-color: #2d9bdb33;
+    cursor: pointer;
 }
 
 
@@ -453,7 +453,6 @@ nav a:last-child {
     padding: 8px 12px;
     width: max-content;
     display: inline-block;
-    /* margin-top: 26px; */
     margin-right: 12px;
 }
 
