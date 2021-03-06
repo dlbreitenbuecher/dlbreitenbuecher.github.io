@@ -400,7 +400,7 @@ a.activeContact{
     padding-bottom: .2rem; 
     border-bottom: 2px solid var(--main-border-color);
     height: min-content;
-    width: min-content;
+    width: fit-content;
     margin-bottom: 12px;
 }
 
@@ -436,6 +436,10 @@ a.activeContact{
 
 .projects-links a {
     margin-right: .5rem;
+}
+
+.projects-resource-link:hover {
+    border-bottom: 2px solid var(--main-border-color);
 }
 
 
