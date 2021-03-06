@@ -35,6 +35,7 @@ html {
     /* Rectangle colors */
     --contact-bg-color: #6FCF97;
     --contact-hover-color: rgba(111, 207, 151, 0.8);
+    --main-resource-link-color: #2D9CDB;
 }
 
 body {
@@ -463,6 +464,11 @@ nav a:last-child {
 
 .projects-links a {
     margin-right: .5rem;
+}
+
+.projects-resource-link {
+    color: var(--main-resource-link-color);
+    font-size: .875rem;
 }
 
 
