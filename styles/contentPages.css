@@ -389,6 +389,15 @@ a.activeContact{
     height: auto;
 }
 
+.image-contain {
+    /* width: 350px;
+    height: auto; */
+    /* overflow: hidden; */
+    object-fit: contain;
+    width: 350px;
+    height: auto;
+}
+
 .projects-card-text-container {
     margin-left: 24px;
     width: 100%;
