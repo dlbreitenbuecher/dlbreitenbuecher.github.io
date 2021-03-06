@@ -35,6 +35,7 @@ html {
     /* Rectangle colors */
     --contact-bg-color: #6FCF97;
     --contact-hover-color: rgba(111, 207, 151, 0.8);
+    --main-resource-link-color: #2D9CDB;
 }
 
 body {
@@ -388,6 +389,15 @@ a.activeContact{
     height: auto;
 }
 
+.image-contain {
+    /* width: 350px;
+    height: auto; */
+    /* overflow: hidden; */
+    object-fit: contain;
+    width: 350px;
+    height: auto;
+}
+
 .projects-card-text-container {
     margin-left: 24px;
     width: 100%;
@@ -400,7 +410,7 @@ a.activeContact{
     padding-bottom: .2rem; 
     border-bottom: 2px solid var(--main-border-color);
     height: min-content;
-    width: min-content;
+    width: fit-content;
     margin-bottom: 12px;
 }
 
@@ -436,6 +446,11 @@ a.activeContact{
 
 .projects-links a {
     margin-right: .5rem;
+}
+
+.projects-resource-link {
+    color: var(--main-resource-link-color);
+    font-size: .875rem;
 }
 
 
