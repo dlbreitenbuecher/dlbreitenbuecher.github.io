@@ -546,10 +546,6 @@ a.activeContact{
     text-align: center;
 }
 
-.blog-post-header h2 {
-    margin-top: 24px;
-}
-
 .blog-post-container p {
     margin-top: 16px;
 }
@@ -563,3 +559,8 @@ a.activeContact{
     text-decoration: underline;
 }
 
+.seo-keyword-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
