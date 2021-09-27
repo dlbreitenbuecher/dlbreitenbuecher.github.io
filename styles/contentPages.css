@@ -326,6 +326,25 @@ a.activeContact{
 
 /* Resume Page Specific Stylings */
 
+.resume-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.resume-header-container {
+    justify-self: flex-start;
+    margin-top: 30px;
+}
+
+.resume-button-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .resumeDownloadButton {
     border: 1px solid var(--main-border-color);
     font-size: .875rem;
