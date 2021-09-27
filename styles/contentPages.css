@@ -36,6 +36,7 @@ html {
     --contact-bg-color: #6FCF97;
     --contact-hover-color: rgba(111, 207, 151, 0.8);
     --main-resource-link-color: #2D9CDB;
+    --darker-resource-link-color: #0754b9;
 }
 
 body {
@@ -491,4 +492,31 @@ a.activeContact{
 .contact-email {
     color: #2F80ED;
     margin-bottom: 1.5rem;
+}
+
+
+/* Blog Post Specific Stylings */
+.blog-post-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 72px;
+}
+
+.blog-post-header {
+    text-align: center;
+}
+
+.blog-post-container p {
+    margin-top: 16px;
+}
+
+.blog-post-container a {
+    margin: 0;
+    color: var(--darker-resource-link-color);
+}
+
+.blog-post-container a:hover {
+    text-decoration: underline;
 }
