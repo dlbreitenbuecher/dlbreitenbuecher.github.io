@@ -86,7 +86,7 @@ header {
     align-items: center;
 }
 
-.name h1 {
+.name h1, .name h2 {
     font-size: 1.75rem;
     font-weight: normal;
     font-family: var(--name-font, sans-serif);
@@ -376,7 +376,7 @@ a.activeContact{
     justify-self: start;
     align-self: flex-start;
     margin-left: 4rem;
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     margin-bottom: 7.5rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -392,6 +392,7 @@ a.activeContact{
     width: 80%;
     align-content: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .projects-heading-container p {
@@ -550,7 +551,9 @@ a.activeContact{
 }
 
 .blog-directory-container h2 {
-    margin-top: 24px;
+    margin-top: 20px;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
 .blog-link-container {
