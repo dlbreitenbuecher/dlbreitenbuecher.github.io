@@ -367,6 +367,21 @@ a.activeContact{
     width: 100%;
 }
 
+.projects-heading-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-content: center;
+    text-align: center;
+}
+
+.projects-heading-container p {
+    width: 75%;
+    align-self: center;
+    margin-top: 16px;
+    font-size: 1rem;
+}
+
 .projects-card {
     display: flex;
     border-radius: 4px;
